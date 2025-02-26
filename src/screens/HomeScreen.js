@@ -10,8 +10,6 @@ import {
 } from 'react-native';
 
 const HomeScreen = ({navigation}) => {
- 
-
   return (
     <ScrollView style={styles.container}>
       <View style={styles.buttonContainer}>
@@ -54,6 +52,12 @@ const HomeScreen = ({navigation}) => {
               desc: 'This is a  swipe able ',
             })
           }
+        />
+
+        <Button
+          style={{marginVertical: 10}} // This may not work on `Button`
+          title="UseMemo Example"
+          onPress={() => navigation.navigate('UseMemoEx')}
         />
       </View>
     </ScrollView>

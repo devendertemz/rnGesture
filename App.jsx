@@ -2,6 +2,7 @@ import React from 'react';
 import {SafeAreaView, View} from 'react-native';
 import HomeScreen from './src/screens/HomeScreen';
 import GestuerScreen from './src/screens/GestuerScreen';
+import UseMemoEx from './src/screens/UseMemoEx';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,11 @@ function App() {
         <Stack.Screen
           name="GestuerScreen"
           component={GestuerScreen}
+          options={{headerShown: true}}
+        />
+        <Stack.Screen
+          name="UseMemoEx"
+          component={UseMemoEx}
           options={{headerShown: true}}
         />
       </Stack.Navigator>
